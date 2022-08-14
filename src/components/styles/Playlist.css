@@ -1,0 +1,84 @@
+.body {
+    /* border : 1px solid red; */
+    flex : 0.8;
+    background : linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+    height : 79vh;
+    color : white;
+    padding : 30px;
+    overflow-y : overlay;
+}
+
+.body_info {
+    display : flex;
+    align-items : center;
+    padding : 10px;
+
+}
+.body_infoText > h2{
+    font-size : 40px;
+    margin-bottom : 10px;
+}
+
+.body_infoText > p {
+    font-size :  14px;
+}
+
+.body_info > img {
+    height : 20vh;
+    margin : 0 20px;
+    box-shadow : 0 4px 60px rgba(0, 0, 0, 0.35);
+}
+.body_icons {
+    display : flex;
+    align-items : center;
+}
+
+.body_icons > .MuiSvgIcon-root {
+    margin-right: 10px;
+}
+.body_shuffle {
+    font-size : 60px !important;
+    margin-left : 50px;
+    margin-top : 20px;
+    margin-bottom : 20px;
+    color : green;
+}
+
+.body_shuffle:hover {
+    transition : 0.1s  transform ease-in;
+    transform : scale(1.1);
+}
+
+.body_songs {
+    margin : 20px -30px;
+}
+.tophead {
+    display : flex;
+    align-items : center;
+    margin : 0 20px;
+    padding : 0 auto;
+    color : gray;
+
+}
+.index {
+    width : 1%;
+    
+}
+.time {
+    width : 1%;
+    text-align: left;
+}
+.track {
+    width: 33%;
+}
+.song_details {
+    width : 56%;
+    margin-left : 20px;
+    padding : 20px;
+}
+
+hr {
+    border : 1px solid #282828;
+    width : 98%;
+    margin : 10px auto;
+}

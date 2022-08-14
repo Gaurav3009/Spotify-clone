@@ -1,0 +1,28 @@
+.sidebar {
+    /* border : 1px solid black; */
+    height : 100vh;
+    flex : 0.2; /* to use the 205 of the width of the screen  */
+    background-color : #040404;
+    color :  white;
+    min-width : 230px;
+    padding : 0 10px;
+}
+
+.sidebar_logo {
+    object-fit : contain; /* Helps to prevent the image to get streched while we adjust the height and width of the image*/
+    height : 70px;
+    padding : 10px;
+    margin-right : auto;
+
+}
+
+.sidebar_title {
+    margin : 0 5px 0 15px;
+    font-size : 12px;
+}
+
+.sidebar > hr {
+   border : 1px solid #282828;
+   width : 90%;
+   margin : 10px auto; 
+}

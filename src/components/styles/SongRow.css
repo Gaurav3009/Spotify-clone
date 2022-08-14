@@ -1,0 +1,58 @@
+.songrow {
+    margin-left : 20px;
+    margin-right : 20px;
+    padding : 2px 5px;
+    display : flex;
+    justify-content: space-evenly;
+    align-items : center;
+    z-index : 100;
+    color : white;
+    border-radius : 10px;
+}
+.songrow:hover {
+    cursor : pointer;
+    background-color : rgb(71, 69, 69);
+    opacity : 0.8;
+}
+.index {
+    flex : 0.01;
+}
+.time {
+    flex : 0.1;
+    text-align: center;
+    color : gray;
+}
+.track {
+    flex: 0.38;
+    color : gray;
+}
+
+.song_details {
+    flex : 0.51;
+    margin-left : 20px;
+    padding : 20px;
+    display : flex;
+    align-items : center;
+    z-index : 100;
+    color : white;
+}
+
+
+.songrow_info {
+    margin-left : 20px;
+}
+
+.songrow_info > h1 {
+    font-size : 16px;
+}
+
+.songrow_info > p {
+    font-size : 14px;
+    margin-top : 3px;
+    color : gray;
+}
+.songrow_album {
+    height : 40px;
+    width : 40px;
+}
+

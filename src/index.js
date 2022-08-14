@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { DataLayerProvider } from './components/DataContext';
+import reducer, { initialState } from './components/reducer';
+import { BrowserRouter } from 'react-router-dom';
+import { PlaylistContextProvider } from './components/PlaylistContext';
+import PlaylistPlay from '@mui/icons-material/PlaylistPlay';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <DataLayerProvider initialState = {initialState} reducer = {reducer}>
+      <PlaylistContextProvider>
+      <App />
+      </PlaylistContextProvider>
+    </DataLayerProvider>
+    </BrowserRouter>
+    {/* <App/> */}
   </React.StrictMode>
 );
 
